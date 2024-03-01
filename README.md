@@ -1,62 +1,46 @@
-# React Frontend Project
+# Getting Started with Create React App
 
-This task covers TypeScript and React basics as well as your testing skills.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## General
+In the project directory, you can run:
 
-* Focus on a working solution rather than the most beautiful or complex
-* All tasks features will start from the `develop` branch and you have to create a branch for your tasks, e.g., `task/01-listuser`
-* When you are done with a task, please create a merge/pull request to branch `develop`.
-* You are allowed to merge between task/feature branches. 
-* When you finished a task please create a work in progress pull request back to `develop` and assign it to @expertsieve.
-* If you can not finish a task or have an issue during implementation try to explain it in the pull request description and/or `README` file
-* Leave some documentation about how to built your solution, built.sh and start.sh scripts are welcome.
-* If you have any questions during your test task, please visit https://expertsieve.freshdesk.com or write an email to support@expert-sieve.com
-* TypeScript is madatory
+### `npm start`
 
-## Task 1
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Create a React[^1] application that lists all users and their addresses provided by the users API of JSONPlaceholder[^2].
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Task 2
+### `npm test`
 
-Add at least one unit-test for each of the components you created using Jest[^3] or other tools. More is better.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Task 3
+### `npm run build`
 
-Add the possibility to view the albums and the photos of a selected user.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Task 4
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Add at least one end-to-end test for your application using cypress[^4] or other tools. More is better.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Bonus
+### `npm run eject`
 
-- Add pagination for more than ten enties and filtering for all lists.
-- Still some time? Add the creation of a new album for a user. (The backend[^2] accepts the PUT/POST but would not change anything)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Expectations
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Use TypeScript.
-- Do not create a project subdirectory. Thus, your `package.json` shall reside in this root dir.
-- Provide usefull documentation about how to set up, run, test the project.
-- Document your coding process with Git[^5] and publish your result to the repository you got along with 
-this tasks. We will then clone your code and run it locally on our machines.
-- The result in the repository should be a git history of your development process (a single commit with
-the complete application is not acceptable. 
-- We want to see multiple commits showing your progress), a README document on how to install and start your application, and a package.json with scripts to build and serve your application.
-- Styling of your html is not necessary. Simple is better than complicated. 
-- Consider your application a proof-of-concept, quicker development using tools to achieve the result is better than hand crafting every line but taking 5x as long. 
-- You can use whatever resources/libraries/open-source in addition (but not as a replacement) of the libraries previously mentioned. 
-- If you use a cli that writes 98% of your code, fine! 
-- If you want to use different testing libraries, feel free to do so, but please provide some arguments.
-- If you have any questions do not hesitate to contact us.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-[^1]: https://reactjs.org
-[^2]: https://jsonplaceholder.typicode.com/
-[^3]: https://jestjs.io/
-[^4]: https://www.cypress.io/
-[^5]: https://git-scm.com
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
