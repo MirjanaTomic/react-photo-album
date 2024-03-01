@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 7vmin;
   pointer-events: none;
 }
 
@@ -15,13 +15,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 1vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: start;
+  font-size: calc(5px + 2vmin);
   color: white;
+}
+
+.Table {
+  padding: 1.5rem 2rem;
+}
+
+.Table > table {
+  width: 70%;
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid #282c34;
+    padding: 0.5rem;
+  }
+
+  .App-table-data-row:hover {
+    background-color: #8ce1f9;
+  }
 }
 
 .App-link {
