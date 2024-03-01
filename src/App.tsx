@@ -30,7 +30,7 @@ interface User {
   };
 }
 
-function Table() {
+function Table(): JSX.Element {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
@@ -50,7 +50,6 @@ function Table() {
           <th>Address</th>
         </tr>
         {users.map((val, key) => {
-          console.log(val, key, "val key");
           return (
             <tr className="App-table-data-row" key={key}>
               <td>{val.name}</td>
@@ -66,7 +65,7 @@ function Table() {
   );
 }
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">
