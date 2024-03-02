@@ -4,20 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Albums from "./Albums";
+import AppNotFoundPage from "./AppNotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: (
-      <div className="App-not-found">
-        <span>404 Page Not Found</span>
-      </div>
-    ),
+    errorElement: <AppNotFoundPage />,
   },
   {
     path: "/userAlbums",
-    element: <div>Test</div>,
+    element: <Albums />,
   },
 ]);
 

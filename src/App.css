@@ -11,7 +11,9 @@
   font-size: calc(5px + 2vmin);
   color: rgba(255, 0, 0, 0.679);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 10vh;
 }
 
@@ -47,6 +49,34 @@
   .App-table-data-row:hover {
     background-color: #8ce1f9;
   }
+}
+
+.App-albums-container {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.App-card {
+  width: 30%;
+  min-height: 10vh;
+  background-color: #e3e6ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 3px 3px rgb(194, 192, 192);
+  margin-bottom: 1rem;
+}
+
+.App-card > button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
 }
 
 .App-link {
