@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const USERS_URL = "https://jsonplaceholder.typicode.com/users";
 
@@ -44,6 +45,7 @@ export function Table(): JSX.Element {
         <tr>
           <th>Name</th>
           <th>Address</th>
+          <th>View Albums</th>
         </tr>
         {users.map((val, key) => {
           return (
@@ -52,6 +54,9 @@ export function Table(): JSX.Element {
               <td>
                 {val.address?.street}, {val.address?.zipcode},
                 {val.address?.city}
+              </td>
+              <td>
+                <Link to="/userAlbums">See all albums</Link>
               </td>
             </tr>
           );
