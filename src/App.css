@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.App-not-found {
+  font-size: calc(5px + 2vmin);
+  color: rgba(255, 0, 0, 0.679);
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
